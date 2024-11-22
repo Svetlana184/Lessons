@@ -89,3 +89,63 @@ Console.WriteLine(SumMas(massive));
 //рекурсивная фнкция - такая конструкция, при которой функция вызывает саму себя. Это прямая рекурсия
 
 //косвенная - когда две или более процедур вызывают друг друга
+
+/* структура
+ * действия на входе в рекурсию
+ * if when
+ * действия выхода из рекурсии
+ * else вызов процедуры с другими параметрами
+ */
+
+/*
+ * рекурсия должна иметь условие завершения, нерекурсивную ветвь
+ * в качестве условия выступают граничные условия параметров, при которых результат работы рекурсии известен - условие завершения вхождения в рекурсию
+ */
+
+//рекурсивная функция факториала
+long FactorialRecursive(int n)
+{
+    if (n == 1 || n == 0) return 1;
+    else
+    {
+        return n * FactorialRecursive(n - 1);
+    }
+}
+Console.WriteLine(FactorialRecursive(5));
+
+//нерекурсивная
+long Factorial(int n)
+{
+    long F = 1;
+    for (int i = 1; i <= n;i++)
+    {
+        F *= i;
+    }
+    return F;
+}
+Console.WriteLine(Factorial(5));
+
+int F1(int n)
+{
+    if (n <= 0) return 0;
+    else if (n > 0 && n % 2 == 0) return F1(n / 2);
+    else return 1 + F1(n - 1);
+}
+int count = 0;
+for (int i = 0; i <= 1000;  i++)
+{
+    if (F1(i) == 3) count++;
+}
+Console.WriteLine(count);
+
+int Fib(int n)
+{
+    if (n == 1) return 0;
+    else if (n==2 || n==3) return 1;
+    else return Fib(n - 2) + Fib(n - 1);
+}
+for (int i = 1; i <= 30;i++)
+{
+    Console.Write(Fib(i) + " ");
+}
+Console.WriteLine();
