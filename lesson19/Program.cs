@@ -149,3 +149,10 @@ for (int i = 1; i <= 30;i++)
     Console.Write(Fib(i) + " ");
 }
 Console.WriteLine();
+
+
+int Sortt(int[] mas)
+{
+    if (mas.Length == 0) return 0;
+    else return mas[1..4]
+}
