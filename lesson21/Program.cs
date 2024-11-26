@@ -45,8 +45,24 @@ DoOperation(10,5,Operation.Add);
 DoOperation(10, 5, Operation.Multiply); 
 DoOperation(10, 5, Operation.Subtract);
 DoOperation(10, 5, Operation.Divide);
-
-
+string moon = "Moon";
+if (!Enum.IsDefined(typeof(DistanceSun), moon))
+{
+    Console.WriteLine($"Значения {moon} нет в перечислении DistanceSun");
+}
+foreach (DistanceSun item in Enum.GetValues(typeof(DistanceSun)))
+{
+    Console.WriteLine("{0,-10}{1,10}{2,20}",
+    Enum.Format(typeof(DistanceSun), item, "G"),
+    Enum.Format(typeof(DistanceSun), item, "D"),
+    Enum.Format(typeof(DistanceSun), item, "X"));
+}
+foreach (string str in Enum.GetNames(typeof(DistanceSun)))
+{
+    Console.WriteLine(str);
+}
+ulong number = 108200000;
+Console.WriteLine(Enum.GetName(typeof(DistanceSun),number));
 enum DayTime
 {
     Morning,
@@ -54,11 +70,23 @@ enum DayTime
     Evening,
     Night
 }
-
 enum Operation
 {
     Add,
     Subtract,
     Multiply,
     Divide
+}
+enum DistanceSun : ulong
+{
+    Sun = 0,
+    Mercury = 57900000,
+    Venus = 108200000,
+    Earth = 149600000,
+    Mars = 227900000,
+    Jupiter = 7783000000,
+    Saturn = 1427000000,
+    Uranus = 2870000000,
+    Neptune = 4496000000,
+    Pluto = 596000000
 }
