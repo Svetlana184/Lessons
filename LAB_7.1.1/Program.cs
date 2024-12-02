@@ -24,7 +24,7 @@
 Car[] cars = new Car[3];
 for (int i = 0; i < cars.Length; i++)
 {
-    Console.WriteLine("введите название");
+    Console.WriteLine("введите марку машины");
     string name = Console.ReadLine();
     Console.WriteLine("Введите производителя");
     string manufacturer = Console.ReadLine();
@@ -49,7 +49,10 @@ for (int i = 0; i < cars.Length; i++)
     Car car = new Car(name, manufacturer, typeC, year, dateTime, registrationDate);
     cars[i] = car;
 }
-
+foreach(Car car in cars)
+{
+    if (DateTime.Now.Subtract(car.Date).TotalDays < 365) car.Print();
+}
 
 enum TypeOfCar
 {
