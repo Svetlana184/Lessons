@@ -61,11 +61,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibr_6_2", "ClassLibr_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson21", "lesson21\lesson21.csproj", "{96A866C5-0560-4CB7-9F64-F321AE350569}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson22", "lesson22\lesson22.csproj", "{2A1B4AD9-706A-4DEB-BD8E-0F7B49A7C59A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson22", "lesson22\lesson22.csproj", "{2A1B4AD9-706A-4DEB-BD8E-0F7B49A7C59A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson 22.2", "lesson 22.2\lesson 22.2.csproj", "{87CFDC92-AC0C-4C93-AB28-584DB5486722}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lesson 22.2", "lesson 22.2\lesson 22.2.csproj", "{87CFDC92-AC0C-4C93-AB28-584DB5486722}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LAB_7.1.1", "LAB_7.1.1\LAB_7.1.1.csproj", "{CD123408-4610-4079-8F07-C9900AE7D1FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LAB_7.1.1", "LAB_7.1.1\LAB_7.1.1.csproj", "{CD123408-4610-4079-8F07-C9900AE7D1FE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
